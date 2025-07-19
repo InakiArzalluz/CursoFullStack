@@ -1,0 +1,27 @@
+
+h1 {
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+}
+
+.poster{
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    background-color: black;
+    padding: 3% 5% 2% 5%;
+    /* centrar el div */
+    width: 50%;
+    margin: 5% 20% 5% 20%; /* seria 25% y 25%, pero 5% ya se lo da el padding */
+}
+
+p{
+    width: 100%;
+    color:white;
+}
+
+img {
+    width:90%;
+    margin: 0 5% 0 5%;
+    border: 5px solid white;
+}
