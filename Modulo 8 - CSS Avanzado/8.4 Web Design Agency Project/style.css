@@ -41,10 +41,9 @@ footer {
 @media (max-width:800px) {
   .tile-image {
     float: none;
-    width: 100%
   }
 
-  .card, .card-text, .card-title {
+  .card, .card > * {
     width: 100%;
   }
   
