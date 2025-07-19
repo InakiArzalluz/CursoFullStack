@@ -1,0 +1,14 @@
+/* group selectors */
+h1, h2 { color:blueviolet; }
+
+/* child selectors */
+.box > p { color: firebrick; }
+
+/* descendant selectors */
+.box li { color: blue; }
+
+/* chaining (and) */
+li.done { color: seagreen; }
+
+/* composicion de child y chaining */
+ul > p.done{ font-size: 0.5rem; }
