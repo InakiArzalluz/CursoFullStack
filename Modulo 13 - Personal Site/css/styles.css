@@ -1,0 +1,32 @@
+.body {
+    background-color: #f8f9fa;
+}
+
+.title {
+    font-family: "Work Sans", "Noto Sans", sans-serif;
+    letter-spacing: -0.033em;
+    font-weight: 900;
+}
+
+.card-text {
+    color: #60768a;
+}
+
+.small-bottom-margin {
+    margin-bottom: 0.2rem;
+}
+.subtitle {
+    font-weight: 700;
+}
+
+.my-description {
+    text-align: justify;
+}
+
+.card-thumbail {
+    height: 225px;
+}
+
+#portrait{
+    margin-top: 0.6rem;
+}
