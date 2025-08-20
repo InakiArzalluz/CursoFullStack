@@ -12,19 +12,12 @@
     color: #60768a;
 }
 
-.small-bottom-margin {
-    margin-bottom: 0.2rem;
-}
 .subtitle {
     font-weight: 700;
 }
 
 .my-description {
     text-align: justify;
-}
-
-.card-thumbail {
-    height: 225px;
 }
 
 #portrait{
