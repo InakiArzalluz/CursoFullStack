@@ -1,0 +1,15 @@
+.big-title{
+    font-size: 10rem;
+    color: yellow;
+    font-style: italic;
+}
+
+.medium-title{
+    font-size: 5rem;
+    color: yellow;
+    font-style: italic;
+}
+
+.margin-50{
+    margin-left: 50px;
+}
