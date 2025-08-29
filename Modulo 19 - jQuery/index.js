@@ -1,9 +1,19 @@
 // queda rojo igualmente, porque esto es un inline style
 $("h1").css("color", "red");
+titulo = $("h1")
 
 // mejor manera, para mantener separation of concerns:
-$("h1").addClass("big-title");
+titulo.addClass("big-title");
 
+titulo.click(() => console.log("h1 was clicked"));
+
+// Todos los bottones pasan a tener eventListener para click :D
+$("button").on(
+    "click", 
+    () => {
+        $("h1").toggle(500);
+    }
+);
 
 // espero un ratito y saco la clase
 setTimeout(
@@ -27,5 +37,21 @@ setTimeout(
 );
 
 $("a").attr("href","https://www.google.com")
+
+$("input").on(
+    "keypress",
+    function (event) {
+        $("h1").text(event.key);
+    }
+);
+
+// agrego contenido dinamicamente
+$("h1").before("<button>new button</button>");
+
+// quito contenido dinamicamente
+setTimeout(
+    () => $("button").remove(),
+    15000
+);
 
 console.log($("h1").hasClass("big-title"));
