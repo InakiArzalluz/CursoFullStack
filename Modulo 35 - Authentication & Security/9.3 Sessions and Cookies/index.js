@@ -15,7 +15,7 @@ app.use(express.static("public"));
 
 // ------------------------------------------------------------------- //
 app.use(
-  session({
+  session({ // express-session.session
     secret: "Subnautica",
     resave: false,
     saveUninitialized: true,
@@ -99,7 +99,7 @@ app.post("/login", passport.authenticate("local", {
 // ------------------------------------------------------------------- //
 // username y password son nombres que deben coincidir con los usados en el form,
 // porque passport los toma automaticamente de ahí
-passport.use(new Strategy(async function verify(username, password, cb){
+passport.use(new Strategy(async function verify(username, password, cb) {
   try {
     const result = await db.query("SELECT * FROM users WHERE email = $1", [
       username,
